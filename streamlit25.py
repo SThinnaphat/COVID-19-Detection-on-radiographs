@@ -17,7 +17,7 @@ from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2,preprocess_in
 model = tf.keras.models.load_model(r"C:\Users\HP\Downloads\my_h5_model3 (1).h5")
 original_title = '<p style="font-family:Tahoma; color:White; font-size: 32px; text-align: center;">Welcome to COVID-19 Predictor</p>'
 st.markdown(original_title, unsafe_allow_html=True)
-st.image("C:\Users\HP\Downloads/bg.jpg",width=700)
+st.image(r"C:\Users\HP\Downloads/bg.jpg",width=700)
 uploaded_file = st.file_uploader("Please upload your chest radiograph(jpg file only)",type="jpg")
 map_dict = {0: 'COVID19',
              1: 'Normal',
