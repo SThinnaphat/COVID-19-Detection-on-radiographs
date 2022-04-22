@@ -45,5 +45,3 @@ model = tf.keras.models.load_model(r"C:\Users\HP\Downloads\my_h5_model3 (1).h5")
 #   if Generate_pred:
 #     prediction = model.predict(img_reshape).argmax()
 #     st.title("Predicted label on image is {}".format(map_dict[prediction]))
-
-!streamlit run app.py & npx localtunnel --port 8501
