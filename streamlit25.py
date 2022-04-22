@@ -6,8 +6,7 @@ from tensorflow.keras.preprocessing import image
 
 model = tf.keras.models.load_model(r"C:\Users\HP\Downloads\my_h5_model3 (1).h5")
 
-# Commented out IPython magic to ensure Python compatibility.
-%%writefile app.py
+
 import cv2
 import numpy as np
 import streamlit as st
