@@ -35,3 +35,4 @@ if uploaded_file is not None:
   if Generate_pred:
     prediction = model.predict(img_reshape).argmax()
     st.title("Predicted label on image is {}".format(map_dict[prediction]))
+
