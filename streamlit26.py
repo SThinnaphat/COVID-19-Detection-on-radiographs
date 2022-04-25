@@ -2,15 +2,6 @@ import cv2
 import numpy as np
 import streamlit as st
 import tensorflow as tf
-from tensorflow.keras.preprocessing import image
-
-model = tf.keras.models.load_model("C:\\Users\\HP\\Documents\\GitHub\\FinalProj_ThinnaphatD\\FinalProj\\my_h5_model3 (1).h5")
-
-# Commented out IPython magic to ensure Python compatibility.
-import cv2
-import numpy as np
-import streamlit as st
-import tensorflow as tf
 import base64
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.mobilenet_v2 import MobileNetV2,preprocess_input as mobilenet_v2_preprocess_input
