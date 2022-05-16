@@ -10,8 +10,8 @@ st.markdown(original_title, unsafe_allow_html=True)
 st.image("bg.jpg",width=700)
 uploaded_file = st.file_uploader("Please upload your chest radiograph(jpg file only)",type="jpg")
 map_dict = {0: 'COVID19',
-            1: 'Normal',
-            2: 'Pneumonia'}
+            1: 'NORMAL',
+            2: 'PNEUMONIA'}
 if uploaded_file is not None:
   file_bytes = np.asarray(bytearray(uploaded_file.read()),dtype=np.uint8)
   opencv_image = cv2.imdecode(file_bytes,1)
